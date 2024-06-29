@@ -1,14 +1,8 @@
-# ASF-Railway
-在Railway.app上运行asf以及[telegram bot](https://github.com/zhongfly/telegram-bot-asf)（默认禁用）
+# ASF-Bot
+在Docker上运行asf以及[telegram bot](https://github.com/zhongfly/telegram-bot-asf)
 
 ## 使用方法简述
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/kSdMwJ)
-
-1. 点击上方的按钮，如果你未注册，则可以直接使用Github账号登录；若已登录，就会提醒你根据此模板在github中新建项目，请务必在`Private repo?`前方打勾！！！**否则会暴露你的steam账号！**
-2. 在Github网站中，打开你刚才新建的Github项目，修改或上传你的ASF以及asf bot的配置文件到ASF/config文件中，如果你需要添加插件，上传到ASF/plugins中即可。把ASF文件夹视为ASF的工作目录即可
-3. （可选）如果你需要使用telegram bot：将`entry.sh`以及`Dockerfile`中的每一行前面的`#`删除；然后按需要修改TG/tgbot.toml（具体参见[该项目](https://github.com/zhongfly/telegram-bot-asf)）
-4. 等待 https://railway.app 上该项目构建完成
-5. 打开对应的网址（ASF-UI）或使用telegram bot操作ASF
+自编译Docker镜像
 
 ## 如何输入steam登录验证
 每次修改Github项目中的文件后，Railway都会重新构建，会丢失登录状态，需要重新登录；或者将令牌导入到ASF中
